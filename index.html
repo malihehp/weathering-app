@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="all">
+      <div class="city-and-search">
+        <div class="cities" id="cities">
+          Shiraz &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gilan
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ardebil
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <form id="form">
+          <input type="text" placeholder="City name" id="currentCity" />
+        </form>
+        <input
+          type="image"
+          id="image"
+          alt="Search"
+          src="images/icons8-search-50.png"
+        />
+      </div>
+      <div class="now-weather">
+        <div class="picture-and-degree">
+          <p class="degree" id="temp">24&deg;C</p>
+        </div>
+      </div>
+
+      <div class="name-and-day">
+        <p class="today">
+          <span id="current-time"></span>
+        </p>
+        <h1 class="city-name" id="city">Tehran</h1>
+      </div>
+
+      <p class="humidity"><span id="humidity">20%</span></p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
